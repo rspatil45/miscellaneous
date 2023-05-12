@@ -1,4 +1,3 @@
-
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
@@ -11,9 +10,8 @@ import java.awt.event.ActionListener;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
-import java.util.Base64;
+
 
 public class EncryptDecryptApp extends JFrame implements ActionListener {
 
@@ -23,6 +21,7 @@ public class EncryptDecryptApp extends JFrame implements ActionListener {
     private final JFileChooser fileChooser;
 
     public EncryptDecryptApp() {
+        super("Encrypt/Decrypt Utility by rspatil45");
         // set window size
         setSize(500, 500);
 
